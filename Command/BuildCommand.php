@@ -40,8 +40,8 @@ class BuildCommand extends ContainerAwareCommand
 
     protected function getMode()
     {
-        return $this->getContainer()->getParameter("kernel.environment") == 'prod'
+        return \JWSDK_Mode::getMode($this->getContainer()->getParameter("kernel.environment") == 'prod'
             ? 'release'
-            : 'debug';
+            : 'debug');
     }
 } 
