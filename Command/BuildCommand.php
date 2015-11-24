@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ISSArt\CGMSBundle\Command;
+namespace ISSArt\Bundle\CGMSBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;

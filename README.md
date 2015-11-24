@@ -32,7 +32,7 @@ Add the following lines to your `composer.json` file and then run `php composer.
         },
         {
             "type": "git",
-            "url": "git@github.com:dpetelin/jwidget-sdk-bundle.git
+            "url": "git@github.com:dpetelin/jwidget-sdk-bundle.git"
         },
     ],
     "autoload": {
@@ -63,7 +63,7 @@ Add the following lines for doctrine configuration in `config.yml` file:
 
 ```yml
 issart_jwidget:
-    configPath: "%kernel.root_dir%/config/jwsdk
+    configPath: "%kernel.root_dir%/jwsdk"
 ```
 
 ## Using

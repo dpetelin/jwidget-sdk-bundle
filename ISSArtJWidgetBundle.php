@@ -1,6 +1,6 @@
 <?php
 
-namespace ISSArt\JWidgetBundle;
+namespace ISSArt\Bundle\JWidgetBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
