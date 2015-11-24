@@ -18,6 +18,8 @@ class BuildCommand extends ContainerAwareCommand
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
+        \JWSDK_Mode::registerMode(new \JWSDK_Mode_Debug());
+        \JWSDK_Mode::registerMode(new \JWSDK_Mode_Release());
         try {
             $builder = new \JWSDK_Builder(
                 $this->getContainer()->getParameter('kernel.root_dir'),
