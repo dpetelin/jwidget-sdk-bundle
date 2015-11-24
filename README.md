@@ -16,8 +16,14 @@ Add the following lines to your `composer.json` file and then run `php composer.
 ```json
 {
     "require": {
-        "iss/jwidget-sdk-bundle": "1.0.*"
-    }
+        "issart/jwidget-sdk-bundle": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git@github.com:dpetelin/jwidget-sdk-bundle.git
+        },
+    ],
 }
 ```
 
@@ -30,7 +36,7 @@ public function registerBundles()
 {
     $bundles = [
         // Other bundles...
-        new ISS\Bundle\JWidgetBundle\ISSJWidgetBundle(),
+        new ISSArt\Bundle\JWidgetBundle\ISSJWidgetBundle(),
     ];
 }
 ```
