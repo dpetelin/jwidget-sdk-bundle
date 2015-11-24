@@ -1,0 +1,47 @@
+{
+  "name": "issart/jwidget-sdk-bundle",
+  "description": "Provides support of jwidget sdk in Symfony applications",
+  "keywords": [
+    "bundle",
+    "symfony",
+    "jwidget",
+    "jwsdk"
+  ],
+  "homepage": "https://github.com/dpetelin/jwidget-sdk-bundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dmitriy Petelin",
+      "email": "dpetelin@issrt.com",
+      "role": "Creator"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "symfony/framework-bundle": "~2.3",
+    "symfony/console": "~2.3",
+    "enepomnyaschih/jwsdk": "0.6.2"
+  },
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "enepomnyaschih/jwsdk",
+        "version": "0.6.2",
+        "dist": {
+          "url": "https://github.com/enepomnyaschih/jwsdk/archive/jwsdk-0.6.2.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ISSArt\\Bundle\\JWidgetBundle\\": ""
+    },
+    "classmap": [
+      "vendor/enepomnyaschih/jwsdk/php/"
+    ]
+  }
+}
