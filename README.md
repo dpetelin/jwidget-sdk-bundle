@@ -62,7 +62,7 @@ public function registerBundles()
 Add the following lines for doctrine configuration in `config.yml` file:
 
 ```yml
-issart_jwidget:
+iss_art_j_widget:
     configPath: "%kernel.root_dir%/jwsdk"
 ```
 

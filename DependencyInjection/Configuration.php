@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('issart_jwidget');
+        $rootNode = $treeBuilder->root('iss_art_j_widget');
 
         $rootNode
             ->children()
