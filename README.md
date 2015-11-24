@@ -36,7 +36,7 @@ public function registerBundles()
 {
     $bundles = [
         // Other bundles...
-        new ISSArt\Bundle\JWidgetBundle\ISSJWidgetBundle(),
+        new ISSArt\Bundle\JWidgetBundle\ISSArtJWidgetBundle(),
     ];
 }
 ```
