@@ -20,10 +20,26 @@ Add the following lines to your `composer.json` file and then run `php composer.
     },
     "repositories": [
         {
+            "type": "package",
+            "package": {
+                "name": "enepomnyaschih/jwsdk",
+                "version": "0.6.2",
+                "dist": {
+                    "url": "https://github.com/enepomnyaschih/jwsdk/archive/jwsdk-0.6.2.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
             "type": "git",
             "url": "git@github.com:dpetelin/jwidget-sdk-bundle.git
         },
     ],
+    "autoload": {
+        "classmap": [
+          "vendor/enepomnyaschih/jwsdk/php/"
+        ]
+    }
 }
 ```
 

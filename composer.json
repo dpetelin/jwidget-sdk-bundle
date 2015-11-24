@@ -39,9 +39,6 @@
   "autoload": {
     "psr-4": {
       "ISSArt\\Bundle\\JWidgetBundle\\": ""
-    },
-    "classmap": [
-      "vendor/enepomnyaschih/jwsdk/php/"
-    ]
+    }
   }
 }
