@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ISSArt\CGMSBundle\Command;
+namespace ISSArt\Bundle\JWidgetBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
@@ -18,6 +18,8 @@ class BuildCommand extends ContainerAwareCommand
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
+        \JWSDK_Mode::registerMode(new \JWSDK_Mode_Debug());
+        \JWSDK_Mode::registerMode(new \JWSDK_Mode_Release());
         try {
             $builder = new \JWSDK_Builder(
                 $this->getContainer()->getParameter('kernel.root_dir'),
@@ -40,8 +42,8 @@ class BuildCommand extends ContainerAwareCommand
 
     protected function getMode()
     {
-        return $this->getContainer()->getParameter("kernel.environment") == 'prod'
+        return \JWSDK_Mode::getMode($this->getContainer()->getParameter("kernel.environment") == 'prod'
             ? 'release'
-            : 'debug';
+            : 'debug');
     }
 } 

@@ -1,6 +1,6 @@
 <?php
 
-namespace ISSArt\JWidgetBundle\DependencyInjection;
+namespace ISSArt\Bundle\JWidgetBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

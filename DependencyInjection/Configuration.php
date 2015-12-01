@@ -1,6 +1,6 @@
 <?php
 
-namespace ISSArt\JWidgetBundle\DependencyInjection;
+namespace ISSArt\Bundle\JWidgetBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('issart_jwidget');
+        $rootNode = $treeBuilder->root('iss_art_j_widget');
 
         $rootNode
             ->children()
