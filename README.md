@@ -23,9 +23,9 @@ Add the following lines to your `composer.json` file and then run `php composer.
             "type": "package",
             "package": {
                 "name": "enepomnyaschih/jwsdk",
-                "version": "0.6.2",
+                "version": "dev-master",
                 "dist": {
-                    "url": "https://github.com/enepomnyaschih/jwsdk/archive/jwsdk-0.6.2.zip",
+                    "url": "https://github.com/enepomnyaschih/jwsdk/archive/master.zip",
                     "type": "zip"
                 }
             }
